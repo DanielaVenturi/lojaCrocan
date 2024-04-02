@@ -1,18 +1,16 @@
 <script setup>
-import SmallAside from '@/component/templates/small/SmallAside.vue'
-import SmallFooter from '@/component/templates/small/SmallFooter.vue'
-import SmallHeader from '@/component/templates/small/SmallHeader.vue'
+import SmallFooter from '@/components/templates/small/SmallFooter.vue'
+import SmallHeader from '@/components/templates/small/SmallHeader.vue'
 </script>
 
-
 <template>
-    <header>
-        <small-header></small-header>
-    </header>
-    <aside>
-        <small-aside></small-aside>
-    </aside>
-    <footer>
-        <small-footer></small-footer>
-    </footer>
+  <header>
+    <small-header></small-header>
+  </header>
+  <main>
+    <router-view />
+  </main>
+  <footer>
+    <small-footer></small-footer>
+  </footer>
 </template>

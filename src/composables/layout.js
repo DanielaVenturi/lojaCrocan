@@ -1,6 +1,6 @@
 import { onMounted, onUnmounted, defineAsyncComponent, shallowRef } from 'vue'
 
-export default function useLayout() {
+export function useLayout() {
   const layout = shallowRef(null)
 
   const onResize = () => {
@@ -15,6 +15,7 @@ export default function useLayout() {
   }
   onMounted(() => {
     window.addEventListener('resize', onResize)
+    onResize()
   })
   onUnmounted(() => {
     window.removeEventListener('resize', onResize)
