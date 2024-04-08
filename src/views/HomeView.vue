@@ -3,5 +3,5 @@
 </script>
 
 <template>
- h
+ <h1>Crocant Store</h1>
 </template>

@@ -23,7 +23,7 @@
       <div class="NavbarLink">
         Infantil
       </div>
-      <div class="NavbarLink">
+      <div class="NavbarLink">  
         Pins
       </div>
       <div class="NavbarLink">
